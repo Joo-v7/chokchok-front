@@ -4844,6 +4844,10 @@ Version:1.0
 .footer{
 	background:#222;
 }
+.footer .section{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
 .footer .about {
 	padding-right: 50px;
 }
