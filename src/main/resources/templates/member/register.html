@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<!-- Meta Tag -->
+    <meta charset="utf-8">
+	<meta name='copyright' content=''>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Title Tag  -->
+    <title>Eshop - eCommerce HTML5 Template.</title>
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/images/favicon.png">
+	<!-- Web Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+	
+	<!-- StyleSheet -->
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="/css/magnific-popup.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/css/font-awesome.css">
+	<!-- Themify Icons -->
+	<link rel="stylesheet" href="/css/themify-icons.css">
+	<!-- Nice Select CSS -->
+	<link rel="stylesheet" href="/css/niceselect.css">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="/css/animate.css">
+	<!-- Flex Slider CSS -->
+	<link rel="stylesheet" href="/css/flex-slider.min.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="/css/owl-carousel.css">
+	<!-- Slicknav -->
+	<link rel="stylesheet" href="/css/slicknav.min.css">
+
+	<!-- Eshop StyleSheet -->
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/style.css">
+	<link rel="stylesheet" href="/css/responsive.css">
+
+	<!-- Color CSS -->
+	<link rel="stylesheet" href="/css/color/color1.css">
+
+	<link rel="stylesheet" href="#" id="colors">
+	
+</head>
+<body class="js">
+
+<!-- Header Fragment 삽입 -->
+<div th:replace="~{common/fragments/header :: header}"></div>
+				
+	<!-- Shop Register -->
+	<section class="shop login section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 offset-lg-3 col-12">
+					<div class="login-form">
+						<h2>회원가입</h2>
+						<p>신규 회원가입 선물로 1000 포인트를 드립니다</p>
+						<!-- Form -->
+						<form class="form" method="post" action="/members/register">
+							<div class="row">
+								<div class="col-12">
+									<div class="form-group">
+										<label>사용자 이름<span>*</span></label>
+										<input type="text" name="username" placeholder="한글 또는 영어 2자~50자까지 입력 가능합니다." required="required">
+
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-group">
+										<label>이메일<span>*</span></label>
+										<input type="text" name="email" placeholder="ex) chokchok@chokchok.com" required="required">
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-group">
+										<label>비밀번호<span>*</span></label>
+										<input type="password" name="password" placeholder="비밀번호를 입력하세요." required="required">
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-group">
+										<label>비밀번호 확인<span>*</span></label>
+										<input type="password" name="passwordConfirm" placeholder="비밀번호를 다시 입력하세요." required="required">
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-group">
+										<label>생년월일<span>*</span></label>
+										<input type="date" name="dateOfBirth" placeholder="" required>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-group">
+										<label>성별<span>*</span></label>
+										<br/>
+										<div class="btn-group w-100 btn-group-toggle" data-toggle="buttons">
+											<label class="btn btn-outline-primary w-50 m=0 " style="background-color: #F6F7FB; text-align: center;">
+												<input type="radio" name="gender" id="남성" autocomplete="off" value="남성" required> 남성
+											</label>
+											<label class="btn btn-outline-primary w-50 m=0" style="background-color: #F6F7FB; text-align: center;">
+												<input type="radio" name="gender" id="여성" autocomplete="off" value="여성" required> 여성
+											</label>
+											<label class="btn btn-outline-primary w-50 m=0" style="background-color: #F6F7FB; text-align: center;">
+												<input type="radio" name="gender" id="기타" autocomplete="off" value="기타" required> 기타
+											</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-12">
+									<div class="form-group login-btn">
+										<button name="submitButton" class="btn btn-block" type="submit">회원가입</button>
+									</div>
+								</div>
+
+							</div>
+						</form>
+						<!--/ End Form -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/ End Login -->
+
+<!-- Footer Fragment 삽입 -->
+<div th:replace="~{common/fragments/footer :: footer}"></div>
+
+<!-- Jquery -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery-migrate-3.0.0.js"></script>
+<script src="/js/jquery-ui.min.js"></script>
+<!-- Popper JS -->
+<script src="/js/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="/js/bootstrap.min.js"></script>
+<!-- Color JS -->
+<script src="/js/colors.js"></script>
+<!-- Slicknav JS -->
+<script src="/js/slicknav.min.js"></script>
+<!-- Owl Carousel JS -->
+<script src="/js/owl-carousel.js"></script>
+<!-- Magnific Popup JS -->
+<script src="/js/magnific-popup.js"></script>
+<!-- Fancybox JS -->
+<script src="/js/facnybox.min.js"></script>
+<!-- Waypoints JS -->
+<script src="/js/waypoints.min.js"></script>
+<!-- Nice Select JS -->
+<script src="/js/nicesellect.js"></script>
+<!-- Flex Slider JS -->
+<script src="/js/flex-slider.js"></script>
+<!-- ScrollUp JS -->
+<script src="/js/scrollup.js"></script>
+<!-- Onepage Nav JS -->
+<script src="/js/onepage-nav.min.js"></script>
+<!-- Easing JS -->
+<script src="/js/easing.js"></script>
+<!-- Active JS -->
+<script src="/js/active.js"></script>
+</body>
+</html>
